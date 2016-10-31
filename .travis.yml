@@ -1,3 +1,21 @@
 language: node_js
 before_install:
 - rvm install 2.3.1
+- gem install jekyll
+
+script:
+- npm run-script deploy
+
+#branches:
+#  only:
+#  - master
+
+cache:
+  directories:
+  - node_modules
+
+env:
+  global:
+    secure: jucwIzIfj7RZCm5ydZY/oRIkM1xzzNejr5i1SPkRYWEa+L2E7CM0OICYZ7wGeBnuaBkOVDnvmyWAjOCcg28TzN4YFQmOpc2n6QbwzcPrOS6eiIRFXZRKsZkTUSgWcov094+KM/7C9vU10L0q6L3wt/R0IFdrrTSH9ajLO60JaIFd2l0mZwpvHoTITKZr08jYRdIT9YDl7wh0Am27kvFPrexII5f+lWOrYbJ8V8nwMMWGfA+rmxn38Frd0mrbAwVhLGa1uqD9QdxYo4mTVB3H3olC5AC3mTP9plQt08GBvRHNCv+lW0R80gpZhkgWwQ971hxOZ7iU6xVbCDK5VfBWLt/8a0Y1EemzL4uIyf/CMk4Q0aBGALRMDFaYDBezhVG5ptAzQgPz/NAv5kphG9PVRqLurL3bUpRnyAmUC/+p5MMmVLHARvUWWLa9C08GjrhSjS7hJ97yZO7aCApLolJj1v8YDBJhwFCw47j33U3jgsEWxW9XZHOZiwxM6jfHPO+lGAM5ZKicVwkuNFOZk5MOyRZBlWSTM1eyTOQhloqnrfFB1AvmH/MqtGYeRYiKAJuwwP+SxcwB3D8vRjSydWLmBsbUbsSp5F1VlB1GszgGPJw384OBcwZX7iFg2WEBfqR6ic92u4+ACgdfIRKVnJTRvCbsucAcXbP5N1+KT489p7s=
+
+
